@@ -1,0 +1,41 @@
+Órdenes por terminal
+++++++++++++++++++++
+
+Si se conecta un cable microUSB al ESP32, se puede enviar
+(siempre que el WiFi siga activo) **órdenes por consola** para 
+que el equipo haga determinadas acciones. Es como las palabras
+clave pero por consola. Las órdenes son:
+
+- ``eeprom``: muestra en consola la configuración guardada en 
+  la eeprom.
+- ``register``: muestra el archivo "register.txt", que son 
+  los paquetes "json_measure" que no se mandaron.
+- ``sim``: enciende el módulo SIM808 durante 1 minuto para que
+  se pueda enviar comandos AT.
+- ``chino0``: enciende la salida 1 para interactuar durante 1 
+  minuto con un sensor chino tipo THE. Se puede enviar por 
+  consola cualquier caracter y al sensor se le mandará la 
+  trama de pedido THE y se mostrará la trama de respuesta. Esto 
+  se hace para mover de lugar el sensor y pedirle que mida 
+  varias veces.
+- ``chino1``: ídem para salida 2 con sensor NPK. 
+- ``chino2``: ídem para salida 3 con sensor de nivel. 
+- ``rtc``: muestra el tiempo que tienen los RTC externo e 
+  interno.
+- ``recrear``: borra y vuelve a crear los archivos "battery.txt"
+  y "register.txt".
+- ``enviartodo``: des/activa el envío de los paquetes después 
+  de la medición.
+- ``2043``: cambia el año del ``json_measure`` por 2043, para 
+  probar la respuesta del servidor.
+- ``at command``: des/activa la impresión en consola de los 
+  comandos AT enviados al SIM808 y su respuesta.
+- ``info``: muestra la información de todas las órdenes por
+  consola.
+- ``erase nvs``: borra la eeprom excepto algunos valores. 
+- ``erase all``: borra toda la eeprom. 
+- ``voltaje,12.05``: establece el coeficiente de voltaje, donde 
+  12.05 es el voltaje de la batería en ese momento. 
+- ``level``: muestra el voltaje de la batería.
+- ``bat``: muestra el contenido de "battery.txt".
+- ``regall``: muestra el contenido de "regall.txt".

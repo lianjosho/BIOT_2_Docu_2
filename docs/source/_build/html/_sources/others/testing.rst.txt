@@ -1,0 +1,32 @@
+Testing 
+#######
+
+.. sectnum:: 
+    :suffix: .-
+    :start: 9
+    :depth: 2
+
+.. contents:: 
+
+Testings subidos a Testomat
+***************************
+
+Aquí se detallan los casos de prueba subidos a `Testomat 
+<https://app.testomat.io/projects/biot/>`_.
+
+Casos de prueba por versiones
+*****************************
+
+V.6.0.0
+=======
+
+- Configuración con sensor THE en las 4 salidas.
+- Configuración con sensor STEVENS en las 4 salidas.
+- Medición manual con sensor THE en las 4 salidas.
+- Medición manual con sensor STEVENS en las 4 salidas.
+
+Reportes de los Testings
+************************
+
+
+
